@@ -7,9 +7,9 @@
 
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
 
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
   </head>
   <body>
     <header class="header">
@@ -29,22 +29,24 @@
       <a class="header__logo">
         <img src="images/logo-black.svg" class="header__logo-image">
       </a>
-      <ul class="address header__address">
-        <li class="li-header"><a href="tel:+99995555555">+9 999 555 5555</a></li>
-        <li class="li-header"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
-        <li class="li-header">наб. Принсенграхт 263-<p>265, Амстердам</p></li>
-      </ul>
+      <address class="address">
+        <div class="header__address">
+          <a href="tel:+99995555555">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p>наб. Принсенграхт 263-265,<p> Амстердам</p></p>
+        </div>
+      </address>
     </header>
 
     <main>
-       <!-- cover -->
-      <section class="cover">
+      <!-- cover -->
+      <section class="cover overlay">
         <!-- <img src="images/cover.jpg" alt=""> -->
-        <div class="cover__title">
-          <h1 class="aligned-text_left aligned-text">он<span class="no-letter-spacing">o</span></h1>
-          <h1 class="aligned-text_center aligned-text">теб<span class="no-letter-spacing">е</span></h1>
-          <h1 class="aligned-text_right aligned-text">над<span class="no-letter-spacing">о</span></h1>
-        </div>
+          <h1 class="cover__title">
+            <span class="aligned-text_left aligned-text">он<span class="no-letter-spacing">o</span></span> 
+            <span class="aligned-text_center aligned-text">теб<span class="no-letter-spacing">е</span></span>
+            <span class="aligned-text_right aligned-text">над<span class="no-letter-spacing">о</span></span>
+          </h1>
         <div class="cover__description">
           <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
           <a class="bet-button" href="#0">Сделать ставку</a>
@@ -56,14 +58,14 @@
       <!-- lots -->
       <section>
         <div class="lots">
-          <h1>Лоты</h1>
+          <h2>Лоты</h2>
           <ul class="lots__card-list">
             <li class="lots__card-list-item">
               <a class="card-link" href="#0">
-                <article class="card">
-                  <img src="images/card-lot-01.jpg" class="card_type_film">
+                <article class="card overlay card_type_film">
+                  <!--<img src="images/card-lot-01.jpg" class="card_type_film">-->
                   <div class="text-lot-frame">
-                    <h2>Фильм режиссёра, который бросил киношколу</h2>
+                    <h3>Фильм режиссёра, который бросил киношколу</h3>
                     <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
                   </div>
                 </article>
@@ -71,10 +73,10 @@
             </li>
             <li class="lots__card-list-item">
               <a class="card-link" href="#0">
-                <article class="card">
-                  <img src="images/card-lot-02.jpg" class="card_type_book">
+                <article class="card overlay card_type_book">
+                  <!--<img src="images/card-lot-02.jpg" class="card_type_book">-->
                   <div class="text-lot-frame">
-                    <h2>Книга, где описан один скучный день из жизни рекламного агента</h2>
+                    <h3>Книга, где описан один скучный день из жизни рекламного агента</h3>
                     <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
                   </div>
                 </article>
@@ -82,10 +84,10 @@
             </li>
             <li class="lots__card-list-item">
               <a class="card-link" href="#0">
-                <article class="card">
-                  <img src="images/card-lot-03.jpg" class="card_type_picture">
+                <article class="card overlay card_type_picture">
+                  <!--<img src="images/card-lot-03.jpg" class="card_type_picture">-->
                   <div class="text-lot-frame">
-                    <h2>Картина, которую повторит даже 5-летний сын маминой подруги</h2>
+                    <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                     <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
                   </div>
                 </article>
@@ -105,9 +107,9 @@
           <img class="about__logo-image" src="images/logo-white.svg">
         </div>
         <div class="text-about">
-          <h1 class="about__title">Об аукционе</h1>
+          <h2 class="about__title">Об аукционе</h2>
           <div>
-            <p class="margin-text-about about__text">Здесь вы&nbsp;не&nbsp;встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не&nbsp;должны были попасть ни&nbsp;на&nbsp;один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+            <p class="about__text">Здесь вы&nbsp;не&nbsp;встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не&nbsp;должны были попасть ни&nbsp;на&nbsp;один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
             <p class="about__text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на&nbsp;критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в&nbsp;эти вещи не верил никто, продолжали верить их&nbsp;создатели. И&nbsp;сейчас эти лоты стали культовыми.</p>
           </div>
         </div>
@@ -117,13 +119,13 @@
     </main>
     <footer>
       <!-- address -->
-      <section>
-        <ul class="address">
-        <li class="li-header"><a href="tel:+99995555555">+9 999 555 5555</a></li>
-        <li class="li-header"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
-        <li class="li-header">наб. Принсенграхт 263-265,<p> Амстердам</p></li>
-      </ul>
-      </section>
+      <address class="address">
+        <div class="footer__address">
+          <a href="tel:+99995555555">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p>наб. Принсенграхт 263-265,<p> Амстердам</p></p>
+        </div>
+      </address>
       <!-- address -->
 
       <!-- footer__menu -->
@@ -143,19 +145,19 @@
       <!-- footer__menu -->
 
       <!-- footer__social -->
-      <nav>
+      <div>
         <ul class="footer__social-list">
           <li class="footer__social-list-item">
-            <a class="footer__social-link" href="#0"><img class="footer__social-icon" src="images/yt.svg"></a>
+            <a class="footer__social-link" target="_blank" href="#0"><img class="footer__social-icon" src="images/yt.svg" alt="YouTube"></a>
           </li>
           <li class="footer__social-list-item">
-            <a class="footer__social-link" href="#0"><img class="footer__social-icon" src="images/vk.svg"></a>
+            <a class="footer__social-link" target="_blank" href="#0"><img class="footer__social-icon" src="images/vk.svg" alt="VKontakte"></a>
           </li>
           <li class="footer__social-list-item">
-            <a class="footer__social-link" href="#0"><img class="footer__social-icon" src="images/pinterest.svg"></a>
+            <a class="footer__social-link" target="_blank" href="#0"><img class="footer__social-icon" src="images/pinterest.svg" alt="Pinterest"></a>
           </li>
         </ul>
-      </nav>
+      </div>
       <!-- footer__social -->
     </footer>
   </body>
