@@ -124,6 +124,7 @@ a {
 .aligned-text_center { 
   justify-self: center;
 }
+
 .aligned-text_right {
   justify-self: end;
 }
@@ -158,9 +159,7 @@ a {
   text-transform: uppercase;
 }
 
-.aligned-text {
-  display: block;
-}
+
 
 /* main description settings */
 
