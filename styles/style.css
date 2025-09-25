@@ -117,11 +117,11 @@ a {
   letter-spacing: 0;
 }
 
-.aligned-text_left { 
+.aligned-text_left {
   justify-self: start;
 }
 
-.aligned-text_center { 
+.aligned-text_center {
   justify-self: center;
 }
 
@@ -145,7 +145,7 @@ a {
   width: 637px;
   word-spacing: 18px;
   /* white-space: nowrap; /* запрет на перенос текста на новую строку*/
-  /* text-align-last: justify; /* расширение пробелов между словами */ 
+  /* text-align-last: justify; /* расширение пробелов между словами */
 }
 
 .bet-button {
