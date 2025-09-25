@@ -139,18 +139,18 @@ a {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 28px;
-  white-space: nowrap;
 }
 
 .cover__description-text {
   width: 637px;
-  white-space: nowrap; /* запрет на перенос текста на новую строку*/
-  text-align-last: justify; /* расширение пробелов между словами */
+  word-spacing: 18px;
+  /* white-space: nowrap; /* запрет на перенос текста на новую строку*/
+  /* text-align-last: justify; /* расширение пробелов между словами */ 
 }
 
 .bet-button {
   display: inline-block;
-  width: 256px;
+  width: 260px;
   padding: 12px 32px 11px 31px;
   border: 1px solid #fff;
   color: #fff;
@@ -187,12 +187,6 @@ a {
   text-transform: uppercase;
 }
 
-.lots img {
-  width: 334px;
-  height: 596px;
-  object-fit: cover;
-}
-
 .card {
   position: relative;
   display: flex;
@@ -219,7 +213,7 @@ a {
 .card-link {
   position: relative;
   width: 334px;
-  min-height: 596px;
+  text-decoration: none;
 }
 
 .text-lot-frame {
@@ -260,8 +254,7 @@ a {
 
 /* main about settings */
 .about {
-  margin: 0 24px 167px;
-  
+  margin: 0 24px 0px;
 }
 
 .about__column {
@@ -286,7 +279,7 @@ a {
 }
 
 .text-about {
-  margin: 133px 0 13px 72px;
+  margin: 133px 0 0 72px;
   width: 693px;
 }
 
@@ -305,7 +298,6 @@ a {
 
 .about__text {
   font-size: 20px;
-  
 }
 /* main about settings */
 
@@ -316,7 +308,7 @@ a {
 footer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  margin: 0 50px 82px 50px;
+  margin: 180px 50px 82px 50px;
   font-size: 18px;
 }
 
@@ -335,7 +327,8 @@ footer {
 }
 
 .footer__social-icon {
+  display: block;
   width: 48px;
-  margin-left: 44px;
+  margin-left: 50px;
 }
 /* footer settings */
